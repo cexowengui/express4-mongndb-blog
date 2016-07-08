@@ -12,11 +12,12 @@
 主要文件都在app.js route.js两个中，第一个文件是主文件，添加了主要中间件，route文件响应各种请求，这里把响应函数放在一个文件了，更好的做法是将响应函数放到其他文件，在route文件中添加函数名即可，让route.js类似Spring中的HandlerMapping。
 
 ###使用说明
+```
 1.启动mongodb服务
 2.命令行 $npm install
 3.开发： $npm run watch 
   上面的watch命令是定义的package.json中的命令，是由nodemen提供的，它会监视文件修改，重新启动app.js。是开发的一大利器  
 4.直接启动 $npm start ;这也是定义在package.json中的命令 
-
+```
 截图文件夹：
 
