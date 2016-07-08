@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  #content_1
+      h2 Register Page
+      //显示错误消息的模板块
+      include ./msg.pug
+      br
+      div#form_container
+        form.form(role='form', action="/reg",method="post")
+          label username:
+          input.form-control(type='text', name="username", placeholder='Enter Username')
+          br/
+          label email:
+          input.form-control(type='text', name="email", placeholder='Enter Email')
+          br/
+          label password:
+          input.form-control(type='password', name="password", placeholder='Password')
+          br/
+          label password again:
+          input.form-control(type='password', name="password2", placeholder='Password again')
+          br/
+          button.btn.btn-default(type='submit') Submit
+          span 
+          a(href='/')
+            button.btn.btn-primary(type="button") Cancel
+

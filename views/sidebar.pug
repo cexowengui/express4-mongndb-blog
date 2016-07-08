@@ -1,0 +1,19 @@
+ul#menu
+  li 
+    a(href='/') Home
+  li 
+    a(href='/tags') Tags   
+  li 
+    a(href='/links') Links
+  br
+  if user
+    li 
+      a(href='/add') new post
+    li 
+     a(href='/logout') Logout
+  else
+    li 
+     a(href='/login') Login
+    li 
+      a(href='/reg') Register
+

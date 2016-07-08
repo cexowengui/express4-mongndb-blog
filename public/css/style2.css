@@ -1,0 +1,102 @@
+body {
+margin:0px;
+padding:0px;
+font-family : courier new, andale mono;
+line-height:24px;
+font-size : 14px;
+letter-spacing: 1px;
+background-color: lightgrey;
+
+}
+
+/*左侧固定，右侧适应的分栏布局*/
+#container{
+    padding-left:200px;
+
+}
+#aside{
+    float:left;
+    position:relative;
+    left:-200px;
+    width:198px;
+    margin-left:-100%;
+
+}
+
+#main{
+    float:left;
+    width:100%;
+
+}
+/*=====左侧固定，右侧适应的分栏布局=====*/
+
+/*=====主标题=====*/
+#head{
+    height: 100px;
+}
+h1{
+    font-size: 24pt;
+    padding-left: 200px;
+    padding-top: 38px;
+}
+h2{
+    font-size: 20pt;
+}
+
+/*=====main内容的布局=====*/
+ 
+#content_1{
+    padding-left: 32px;
+}
+
+
+a{
+text-decoration : none;
+color:black; 
+padding: 0px;
+border-width: 0px 0px 1px 0px;
+border-style: solid;
+border-color: black;
+}
+
+
+a:hover{
+background-color:#ffdd00;
+}
+ 
+li{
+    list-style-type:none;
+}
+
+.form-control,label{
+    height: 24px;
+    margin: 4px;
+}
+
+.form-control{
+    vertical-align:middle;
+    width:200px; 
+}
+label{
+    vertical-align:middle;
+    display:inline-block;
+    width:150px;
+}
+
+.post_input{
+    width: 600px;
+}
+
+.content{
+    width:600px;
+    height: 300px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+  	left: 0;
+	  right: 0;
+    margin: auto;
+} 
+

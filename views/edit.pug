@@ -1,0 +1,22 @@
+extends layout
+
+
+block content
+  div#content_1
+    h4 new post
+    //显示错误消息的模板块
+    include ./msg.pug
+    br
+    div#form_container
+    form.post_form(role='form', action="/add",method="post")
+        label 标题:
+        input.post_input(type='text', name="title", placeholder='文章标题')
+        br
+        label 内容:
+        textarea.content(type='text', name="content", placeholder='')
+        br
+        label 标签:
+        input.post_input(type='text', name="tags", placeholder='请用逗号分隔')
+        br
+        button(type='submit') 提交
+    

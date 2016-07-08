@@ -1,0 +1,36 @@
+{
+  "name": "express4-mongndb-blog",
+  "version": "1.0.0",
+  "description": "learn node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./app.js",
+    "watch": "nodemon ./app.js"
+  },
+  "author": "hsiung",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "latest",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "latest",
+    "cookie-parser": "latest",
+    "crypto": "0.0.3",
+    "debug": "^2.2.0",
+    "express": "latest",
+    "express-session": "latest",
+    "moment": "latest",
+    "mongoose": "latest",
+    "morgan": "~1.7.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.0.0",
+    "pug": "^2.0.0-beta3",
+    "serve-favicon": "latest",
+    "socket.io": "latest"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.2"
+  }
+}
